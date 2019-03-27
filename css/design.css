@@ -43,6 +43,15 @@ body{
       color: #fff
     }
 
+    .no-match{
+      margin: 0 0 20px 0;
+      padding: 0 0 20px 0;
+      text-align: center;
+      width: 50%;
+      font-size: 25px;
+      font-weight: bold;
+      color: #888;
+    }
 .student-list{}
 
   .student-item{
@@ -94,6 +103,7 @@ body{
     padding: 0;
     border-bottom: none;
   }
+
 
 .pagination{
   margin: 40px 0 0 0;
