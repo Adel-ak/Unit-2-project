@@ -68,12 +68,12 @@ const run = {
 
         for (let i = 0; i < studentsLi.length; i++) {
             //checks if input value is found in studentsNames if so set to studentsLi diplay to diplay
-            if (studentsNames[i].textContent.includes(searchInput.value)) {
+            if (studentsNames[i].textContent.includes(searchInput.value.toLowerCase())) {
                 studentsLi[i].style.display = '';
                 displayed.push(studentsLi[i]); //pushing whats displayed into displayed array to find out whats the new amount of the list 
                 amountPerPage = Math.ceil(displayed.length / 10); //set the new amount PerPage  
                 //checks if input value is not found in studentsNames if so set to studentsLi diplay to none
-            } else if (!studentsNames[i].textContent.includes(searchInput.value)) {
+            } else if (!studentsNames[i].textContent.includes(searchInput.value.toLowerCase())) {
                 studentsLi[i].style.display = 'none';
                 notDisplayed.push(studentsLi[i]); //pushing whats not displayed into notFound array (to be used to check if noMatchLi is needed to be display by checking 'notDisplayed.length === studentsNames.length')
             }
